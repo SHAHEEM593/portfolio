@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ee71e4c85d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="header">
+<div class="container">
+    <nav>
+        <!-- <img src="images/logo.png" class="logo"> -->
+        <ul id="sidemenu">
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+
+        </ul>
+        <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div>
+        <div class="header-text">
+            <p> PYTHON DEVELOPER</p>
+            <h1>Hi, I'm <span>Shaheem</span> <br>I Am BackEnd Developer</h1>
+        </div>
+    </div>
+</div>
+
+</div>
+<!---------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/shaheem23.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Shaheem, a passionate Python backend developer. As a recent graduate,
+                    I'm eager to apply my skills in web development, database management, and API creation to real-world projects.
+                    I thrive on problem-solving, collaboration, and continuous learning,
+                    making me a valuable asset to any team. Let's build something great together!</p>
+
+
+
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+
+                     </div>
+                     <div class="tab-contents active-tab"id="skills">
+                        <ul>
+                            <li><span>PYTHON </span><br></li>
+                            <li><span>DJANGO </span><br></li>
+                            <li><span>DJANGO REST FRAMEWORK </span><br></li>
+                            <li><span>MySQL </span><br></li>
+                          
+
+
+                        </ul>
+                     </div>
+                     <div class="tab-contents"id="experience">
+                        <ul>
+                            <li><span>BACKEND DEVELOPMENT INTERN</span><br>Beinex </li>
+                           
+
+
+                        </ul>
+                     </div>  <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Python And Django Skill Traing Course</span><br>Avotha Institute</li>
+                            <li><span>Bachelors Of Commerce</span><br>Sree Narayana Guru College Coimbatore,Tamil Nadu</li>
+                            <li><span>Higher Secondary</span><br>Assisi EMHSS Kanjikode Palakkad, Kerala</li>
+                            <li><span>High School</span><br>Seventh Day Adventist Palakkad, Kerala</li>
+
+
+                        </ul>
+                     </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-----------------sevices--------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>API Development and Integration</h2>
+                <p>As a fresher in backend development, I can specialize in creating API endpoints for web and mobile applications. 
+                     Offer services to design and develop RESTful  APIs, allowing clients to access and manage data from their applications.
+                      Focus on clean code,
+                    authentication, and data validation to ensure secure and efficient data interactions.</p>
+                   
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Web Development</h2>
+                <p>I specialize in creating customized, responsive websites and web applications that enhance your online presence.
+                     Our experienced team ensures top-quality design, user-friendly interfaces, and ongoing support. 
+                    Let's transform your web ideas into reality, making your online presence stand out.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Management</h2>
+                <p> Design, create, and maintain databases, including data modeling, schema design, 
+                    and querying using technologies like SQL or NoSQL databases </p>
+                    
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-------------------portfolio----------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Screenshot (154).png" >
+                <div class="layer">
+                    <h3>Ecommerce API using Python Django                    </h3>
+                    <p>Developed a comprehensive Ecommerce API using Python
+                        Django, encompassing user authentication, product management,
+                        orders, and email notifications. Successfully deployed on
+                        PythonAnywhere.
+                        Implemented user authentication with JWT for secure access
+                        and user management.
+                        - Created seamless CRUD operations for product management,
+                        including image upload. - Integrated a dynamic shopping cart,
+                        allowing users to modify quantities and place orders.
+                        - Developed a filtered product listing with pagination for a smooth
+                        browsing
+                        experience.
+                        - Utilized Django's email framework for HTML-formatted order
+                        notifications.
+                        - Successfully deployed the API on PythonAnywhere, ensuring
+                        continuous functionality.</p>
+                    <a href="https://shaheem593.pythonanywhere.com/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work23.png" >
+                <div class="layer">
+                    <h3>Ecommerce Using Django</h3>
+                    <p>Explore a world of online shopping like never before with our Django-driven e-commerce solution. Discover a
+                         seamless shopping experience with a wide range of products, secure payment options, and user-friendly navigation.
+                          Our platform offers a responsive design, easy product management, and robust security features. Shop confidently
+                         and enjoy the convenience of modern e-commerce, all powered by Django's reliable backend framework</p>
+                    <a href="https://github.com/SHAHEEM593/E-commerce"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="images/Screenshot (157).png" >
+                <div class="layer">
+                    <h3>Social Media Using Django </h3>
+                    <p>Experience the next level of social networking with our Django-powered social media platform.
+                         Connect, share, and engage with friends and communities effortlessly. Our feature-rich application offers user-friendly interfaces, real-time updates, secure user authentication, and personalized experiences. Discover a vibrant space for communication, content sharing, and social interaction
+                        , all built on the robust foundation of Django's powerful backend capabilities.</p>
+                    <a href="https://github.com/SHAHEEM593/Social_Media"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn ">See More</a>
+
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> <a href="mailto:mohammadshaheem593@gmail.com">mohammadshaheem593@gmail.com</a></p>
+                <p> <i class="fa-sharp fa-solid fa-phone"></i> +91-8921160842</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/s.h.a.h.e.e.m?igshid=NTc4MTIwNjQ2YQ=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/SHAHEEM593"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shaheem-p-s-709a6222b/"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+                <a href="images/Shaheem PS Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+          
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+    <script>
+
+
+
+
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+
+        } 
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+
+    }
+
+    </script>
+<script>
+
+   var sidemenu = document.getElementById("sidemenu");
+
+
+    function openmenu(){
+    sidemenu.style.right = "0";
+   }
+    function closemenu(){
+    sidemenu.style.right = "-200px";
+   }
+
+
+
+
+
+</script>
+<script>
+    const scriptURL =' https://script.google.com/macros/s/AKfycbxcSOypakQr2gnUtR4kMC0HHEw1GBFdjIAgNngGP4RkiGhzAZOZSkAGLiE6jGKcLwi4/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML ="Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            
+        },5000)
+        form.reset()
+    })
+
+        .catch(error => console.error('Error!', error.message))
+})
+   
+  </script>
+</body>
+</html>
